@@ -1,0 +1,5 @@
+return_id,order_id,return_date,return_reason,refund_amount
+801,5005,2025-02-10,Defective product,89.99
+802,5012,2025-02-18,Wrong item delivered,24.99
+803,5025,2025-03-01,Changed mind,199.5
+804,5040,2025-03-15,Damaged in transit,69.99

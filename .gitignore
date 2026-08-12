@@ -1,0 +1,19 @@
+# Python / Virtualenv
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# Environment Variables & Secrets
+.env
+
+# Docker / OS data
+.DS_Store
+Thumbs.db
+
+# Large raw datasets or temp files
+*.csv
+*.xlsx
+!data/sample/*.csv
+!data/sample/*.xlsx

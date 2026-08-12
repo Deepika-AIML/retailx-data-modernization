@@ -1,0 +1,18 @@
+services:
+  mysql_source:
+    image: mysql:8.0
+    container_name: retailx_mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: retailx_source
+      MYSQL_USER: retailx_user
+      MYSQL_PASSWORD: retailx_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  mysql_data:
