@@ -17,3 +17,5 @@ Thumbs.db
 *.xlsx
 !data/sample/*.csv
 !data/sample/*.xlsx
+# Power BI File
+*.pbix
